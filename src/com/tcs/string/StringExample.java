@@ -1,4 +1,7 @@
 package com.tcs.string;
+
+import java.util.Arrays;
+
 /**
  * 
  *toUpperCase method is used to convert the string lower case to Upper case.
@@ -27,5 +30,19 @@ public class StringExample {
 		System.out.println(name.length());//it gives length of the string
 		System.out.println(name.intern());
 		System.out.println(name.isEmpty());//it will check string empty or not
+		
+		char[] charArray=name.toCharArray();
+		
+//		String forward printing
+		for(char obj:charArray)
+			System.out.print(obj);
+		
+		System.out.println();
+		
+//		Reveres String
+		for(int i=charArray.length-1;i>=0;i--)
+			System.out.print(charArray[i]);
+		
+		System.out.println();		
 	}
 }
